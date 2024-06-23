@@ -32,25 +32,24 @@ export default function CountdownTimer({ CountdownTimestampMs, change }) {
 
   return (
     <div className={change ? 'container' : 'container2'}>
-      <div>
+      <div className='timerCont'>
    {
     change?(
       <div className='CountdownTimer1'>
         <p><span>{remainingTime.days}</span> <em>Օր</em></p>
-      <p><span>{remainingTime.hours}</span> <em>Ժամ</em></p>
-      <p><span>{remainingTime.minutes}</span> <em>Րոպե</em></p>
-      <p><span>{remainingTime.seconds}</span> <em>Վայրկյան</em></p>
+        <p><span>{remainingTime.hours}</span> <em>Ժամ</em></p>
+        <p><span>{remainingTime.minutes}</span> <em>Րոպե</em></p>
+        <p><span>{remainingTime.seconds}</span> <em>Վայրկյան</em></p>
       </div>
     
     ):
     (
       <div className='CountdownTimer2'>
-   <p><span>{remainingTime.days}</span><em className='text'> Days</em></p>
-      <p><span>{remainingTime.hours}</span><em className='text'> Hours</em></p>
-      <p><span>{remainingTime.minutes}</span><em className='text'> Minutes</em></p>
-      <p><span>{remainingTime.seconds}</span> <em className='text'> Seconds</em></p>
+        <p><span>{remainingTime.days}</span><em className='text'> Days</em></p>
+        <p><span>{remainingTime.hours}</span><em className='text'> Hours</em></p>
+        <p><span>{remainingTime.minutes}</span><em className='text'> Minutes</em></p>
+        <p><span>{remainingTime.seconds}</span> <em className='text'> Seconds</em></p>
       </div>
-   
     )
    }
       </div>
