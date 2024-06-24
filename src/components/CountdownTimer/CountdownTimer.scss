@@ -1,6 +1,9 @@
 font-face {
   src: url(/src/assets/Quebecks.ttf);
 }
+/* Импорт шрифта из Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
 
 p {
   display: flex;
@@ -18,6 +21,7 @@ p {
 }
 
 .container {
+
   background-image: url('../main2.jpg');
   background-size: contain;
   background-repeat: no-repeat;
@@ -28,19 +32,22 @@ p {
   }
 }
 .barev{
-  font-size: 48px;
-  font-style: italic;
+ transform: translateY(542%);
+  font-size: 30px;
+  font-family: 'Great Vibes', cursive;
   color: rgba(0, 0, 0, 0.7);
   text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
 }
 
 .container2 {
-  position: relative;
-  background-image: url('../photo4e.jpg');
+  background-image: url('../main2.jpg');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  height: 100vh;
+  min-height: 100dvh;
+  @media(min-width:300px) and (max-width:900px){
+    background-size: cover;
+  }
 }
 
 i {
@@ -61,6 +68,16 @@ i {
   gap: 10px;
   padding: 10px 20px;
   font-family: Quebecks;
+}
+.CountdownTimer2{
+  transform: translateY(-30%);
+}
+.barev1{
+  transform: translateY(800%);
+  font-size: 30px;
+  font-family: 'Italic';
+  color: rgba(0, 0, 0, 0.7);
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
 }
 
 
@@ -87,7 +104,7 @@ i {
   }
 
   @media (min-width: 1367px) and (max-width: 1920px) {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 
   @media (min-width: 1921px) {

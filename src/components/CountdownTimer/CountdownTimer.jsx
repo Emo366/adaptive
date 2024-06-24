@@ -71,15 +71,14 @@ export default function CountdownTimer({ CountdownTimestampMs, change }) {
       </div>
     ) : (
       <div className='container2'>
+        <h1 className='barev1'>Days left for the wedding ...</h1>
         <div className='timercont'>
-          <div className='CountdowTimer1'>
             <div className='CountdownTimer2'>
               <p><span>{remainingTime.days}</span><em className='text'> Days</em></p>
               <p><span>{remainingTime.hours}</span><em className='text'> Hours</em></p>
               <p><span>{remainingTime.minutes}</span><em className='text'> Minutes</em></p>
               <p><span>{remainingTime.seconds}</span> <em className='text'> Seconds</em></p>
             </div>
-          </div>
         </div>
       </div>
     )
