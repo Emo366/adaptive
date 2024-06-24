@@ -59,7 +59,7 @@ export default function CountdownTimer({ CountdownTimestampMs, change }) {
   return (
     change ? (
       <div className='container'>
-         <h1 className='barev'>Հարսանիքին մնաց․․․</h1>
+         <h1 className='barev'>Հարսանիքին մնաց...</h1>
         <div className='timerCont'>
           <div className='CountdownTimer1'>
             <p><span>{remainingTime.days}</span> <em>Օր</em></p>
