@@ -19,7 +19,7 @@ function App() {
         language ? (
           <>
             <Walpapers photo={'../photo1.jpg'} />
-            <Walpapers photo={'../photo13.jpg'} />
+            <Walpapers photo={'../narek.jpg'} />
             <Walpapers photo={'../photo2.jpg'} />
         
               <CountdownTimer change={language} CountdownTimestampMs={1721764800000} />
