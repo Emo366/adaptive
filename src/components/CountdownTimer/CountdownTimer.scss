@@ -111,11 +111,14 @@ i {
     font-size: 1.5rem;
   }
   @media(min-width:250px)and (max-width:400px){
-    font-size: 1rem;
+    font-size: 0.66rem;
   }
   @media(width: 305px){
     font-size: 1rem;
   }
+@media(min-width:252px) and (max-width:300px){
+  font-size: 0.62rem;
+}
 }
 
 
