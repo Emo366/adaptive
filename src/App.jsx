@@ -19,7 +19,7 @@ function App() {
         language ? (
           <>
             <Walpapers photo={'../photo1.jpg'} />
-            <Walpapers photo={'../photo3.jpg'} />
+            <Walpapers photo={'../photo13.jpg'} />
             <Walpapers photo={'../photo2.jpg'} />
         
               <CountdownTimer change={language} CountdownTimestampMs={1721764800000} />
@@ -30,7 +30,7 @@ function App() {
           </>
         ) : <>
         <Walpapers photo={'../photo1e.jpg'} />
-            <Walpapers photo={'../photo2e.jpg'} />
+            <Walpapers photo={'../photo12.jpg'} />
             <Walpapers photo={'../photo3e.jpg'} />
             <CountdownTimer  change={language} CountdownTimestampMs={1721764800000} />
         </>

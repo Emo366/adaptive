@@ -33,7 +33,6 @@ export default function CountdownTimer({ CountdownTimestampMs, change }) {
   return (
     change ? (
       <div className='container'>
-        <h1 className='barev'><em>Հարսանիքին մնաց</em></h1>
         <div className='timerCont'>
           <div className='CountdownTimer1'>
             <div className='time-section'>
@@ -54,6 +53,7 @@ export default function CountdownTimer({ CountdownTimestampMs, change }) {
             </div>
           </div>
         </div>
+        <h1 className='barev'><em>Հարսանիքին մնաց</em></h1>
       </div>
     ) : (
       <div className='container2'>
