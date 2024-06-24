@@ -11,6 +11,7 @@ p {
   gap: 5px;
   align-items: center;
   margin: 0;
+
 }
 
 .language-text {
@@ -33,9 +34,8 @@ p {
 }
 .barev{
  transform: translateY(542%);
-  font-size: 30px;
-  font-family: 'Great Vibes', cursive;
-  color: rgba(0, 0, 0, 0.7);
+  font-size: 25px;
+  font-weight: normal;
   text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
 }
 
@@ -74,10 +74,10 @@ i {
 }
 .barev1{
   transform: translateY(800%);
-  font-size: 30px;
+  font-size: 25px;
   font-family: 'Italic';
-  color: rgba(0, 0, 0, 0.7);
-  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
+
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
 }
 
 
