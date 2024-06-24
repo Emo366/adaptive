@@ -30,61 +30,55 @@ export default function CountdownTimer({ CountdownTimestampMs, change }) {
     setRemainingTime(getRemainingTime(countdown));
   };
 
-  // return (
-  //   <div className={change ? 'container' : 'container2'}>
-  //     <div className='timerCont'>
-  //  {
-  //   change?(
-  //     <div className='CountdownTimer1'>
-        
-  //       <p><span>{remainingTime.days}</span> <em>Օր</em></p>
-  //       <p><span>{remainingTime.hours}</span> <em>Ժամ</em></p>
-  //       <p><span>{remainingTime.minutes}</span> <em>Րոպե</em></p>
-  //       <p><span>{remainingTime.seconds}</span> <em>Վայրկյան</em></p>
-  //     </div>
-    
-  //   ):
-  //   (
-  //     <div className='CountdownTimer2'>
-  //       <p><span>{remainingTime.days}</span><em className='text'> Days</em></p>
-  //       <p><span>{remainingTime.hours}</span><em className='text'> Hours</em></p>
-  //       <p><span>{remainingTime.minutes}</span><em className='text'> Minutes</em></p>
-  //       <p><span>{remainingTime.seconds}</span> <em className='text'> Seconds</em></p>
-  //     </div>
-  //   )
-  //  }
-  //     </div>
-  //   </div>
-  // );
   return (
     change ? (
       <div className='container'>
-         <h1 className='barev'><em>Հարսանիքին մնաց</em></h1>
+        <h1 className='barev'><em>Հարսանիքին մնաց</em></h1>
         <div className='timerCont'>
           <div className='CountdownTimer1'>
-            <p><span>{remainingTime.days}</span> <em>Օր</em></p>
-            <p><span>{remainingTime.hours}</span> <em>Ժամ</em></p>
-            <p><span>{remainingTime.minutes}</span> <em>Րոպե</em></p>
-            <p><span>{remainingTime.seconds}</span> <em>Վայրկյան</em></p>
+            <div className='time-section'>
+              <p>{remainingTime.days}</p>
+              <em>Օր</em>
+            </div>
+            <div className='time-section'>
+              <p>{remainingTime.hours}</p>
+              <em>Ժամ</em>
+            </div>
+            <div className='time-section'>
+              <p>{remainingTime.minutes}</p>
+              <em>Րոպե</em>
+            </div>
+            <div className='time-section'>
+              <p>{remainingTime.seconds}</p>
+              <em>Վայրկյան</em>
+            </div>
           </div>
         </div>
       </div>
     ) : (
       <div className='container2'>
         <h1 className='barev1'><em>Days left for the wedding</em></h1>
-        <div className='timercont'>
-            <div className='CountdownTimer2'>
-              <p><span>{remainingTime.days}</span><em className='text'> Days</em></p>
-              <p><span>{remainingTime.hours}</span><em className='text'> Hours</em></p>
-              <p><span>{remainingTime.minutes}</span><em className='text'> Minutes</em></p>
-              <p><span>{remainingTime.seconds}</span> <em className='text'> Seconds</em></p>
+        <div className='timerCont'>
+          <div className='CountdownTimer2'>
+            <div className='time-section'>
+              <p>{remainingTime.days}</p>
+              <em className='text'>Days</em>
             </div>
+            <div className='time-section'>
+              <p>{remainingTime.hours}</p>
+              <em className='text'>Hours</em>
+            </div>
+            <div className='time-section'>
+              <p>{remainingTime.minutes}</p>
+              <em className='text'>Minutes</em>
+            </div>
+            <div className='time-section'>
+              <p>{remainingTime.seconds}</p>
+              <em className='text'>Seconds</em>
+            </div>
+          </div>
         </div>
       </div>
     )
   );
 }
-
-
-
-
